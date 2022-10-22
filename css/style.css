@@ -195,55 +195,6 @@ ul{
 .hero-button:focus{
     background-color:var(--title-button-color);
 }
-.backdrop{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 250ms cubic-bezier(0,.4, 0, 0.2, 1), translate 250ms cubic-bezier(0,.4, 0, 0.2, 1);
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
-}
-.modal-block{
-  position: absolute;
-  background-color: var(--logo-footer-color);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-.xclose-icon{
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-}
-.button-modal{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 8px;
-    margin-right: 8px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--logo-footer-color);
-    color: #000000;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    text-align: center;
-}
-.backdrop.is-hidden{
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
 .visual-hidden {
  position: absolute;
  white-space: nowrap;
@@ -632,4 +583,54 @@ margin-right: 30px;
 }
 .social-icon{
     fill: currentColor;
+}
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0,.4, 0, 0.2, 1), translate 250ms cubic-bezier(0,.4, 0, 0.2, 1);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.modal-block{
+  position: absolute;
+  background-color: var(--logo-footer-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.xclose-icon{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.button-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--logo-footer-color);
+    color: #000000;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.backdrop.is-hidden{
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
