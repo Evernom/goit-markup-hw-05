@@ -356,10 +356,9 @@ ul{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
 
-}
-.client-card{
-margin-right: 30px;
 }
 .client-card:last-child{
     margin-right: 0;
